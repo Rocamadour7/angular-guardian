@@ -1,3 +1,4 @@
-<p>
-  villains-list works!
-</p>
+<md-list>
+  <h2 md-header>{{ title }}</h2>
+  <gog-villain-list-item *ngFor="let villain of villains" [villain]="villain"></gog-villain-list-item>
+</md-list>

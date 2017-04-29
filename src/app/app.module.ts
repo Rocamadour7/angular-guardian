@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { FlexLayoutModule } from "@angular/flex-layout";
 import "hammerjs";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +16,9 @@ import { VillainsComponent } from './villains/villains.component';
 import { VillainsListComponent } from './villains/villains-list/villains-list.component';
 import { VillainsDetailsComponent } from './villains/villains-details/villains-details.component';
 import { LandingComponent } from './landing/landing.component';
+import { NavComponent } from './nav/nav.component';
+import { HeroListItemComponent } from './heroes/heroes-list/hero-list-item/hero-list-item.component';
+import { VillainListItemComponent } from './villains/villains-list/villain-list-item/villain-list-item.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,10 @@ import { LandingComponent } from './landing/landing.component';
     VillainsComponent,
     VillainsListComponent,
     VillainsDetailsComponent,
-    LandingComponent
+    LandingComponent,
+    NavComponent,
+    HeroListItemComponent,
+    VillainListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,6 @@ import { LandingComponent } from './landing/landing.component';
     HttpModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule,
     AppRoutingModule
   ],
   providers: [],

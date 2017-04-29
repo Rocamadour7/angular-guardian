@@ -1,6 +1,9 @@
-<md-sidenav-container fxFlex>
+<md-sidenav-container>
   <md-sidenav mode="side" opened>
-    Lista heroes
+    <gog-heroes-list></gog-heroes-list>
   </md-sidenav>
-  Detalles heroe
+    <gog-heroes-details *ngIf="selectedHero; else infoText" [hero]="selectedHero"></gog-heroes-details>
+    <ng-template #infoText>
+      <p>Please select a hero</p>
+    </ng-template>
 </md-sidenav-container>

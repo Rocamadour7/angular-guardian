@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { HeroService } from './../hero.service';
+import { Hero } from './../hero.model';
 
 @Component({
   selector: 'gog-heroes-list',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes-list.component.css']
 })
 export class HeroesListComponent implements OnInit {
+  title: string = 'Heroes';
+  heroes: Array<Hero>;
+  @Input() selectedHero: Hero;
 
-  constructor() { }
+  constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    this.heroService.getHeroes().then((heroes) => {
+      this.heroes = heroes;
+    });
   }
 
 }

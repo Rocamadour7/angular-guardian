@@ -1,6 +1,9 @@
-<md-sidenav-container fxFlex>
+<md-sidenav-container>
   <md-sidenav mode="side" opened>
-    Lista villanos
+    <gog-villains-list></gog-villains-list>
   </md-sidenav>
-  Detalles villano
+    <gog-villains-details *ngIf="selectedVillain; else infoText" [villain]="selectedVillain"></gog-villains-details>
+    <ng-template #infoText>
+      <p>Please select a villain</p>
+    </ng-template>
 </md-sidenav-container>

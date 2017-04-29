@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { VillainService } from './../villain.service';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Villain } from './../villain.model';
 
 @Component({
   selector: 'gog-villains-list',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./villains-list.component.css']
 })
 export class VillainsListComponent implements OnInit {
-
-  constructor() { }
+  title: string = 'Villains';
+  villains: Array<Villain>;
+  @Input() selectedVillain: Villain;
+ 
+  constructor(private villainService: VillainService) { }
 
   ngOnInit() {
+    this.villainService.getVillains().then((villains) => {
+      this.villains = villains;
+    });
   }
 
 }

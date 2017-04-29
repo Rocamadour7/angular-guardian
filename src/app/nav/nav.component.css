@@ -1,0 +1,14 @@
+.ng-title-icon > i {
+  background-image: url("../../assets/ng.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1em 2em;
+}
+
+.title {
+    margin-right: 32px;
+}
+
+.name {
+    padding: 0;
+}

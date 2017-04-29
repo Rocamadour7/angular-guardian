@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { VillainService } from './../villain.service';
+import { Villain } from './../villain.model';
 
 @Component({
   selector: 'gog-villains-details',
@@ -6,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./villains-details.component.css']
 })
 export class VillainsDetailsComponent implements OnInit {
+  @Input() villain: Villain;
 
-  constructor() { }
+  constructor(private villainService: VillainService) { }
 
   ngOnInit() {
   }

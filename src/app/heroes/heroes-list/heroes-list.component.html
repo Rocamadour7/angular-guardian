@@ -1,3 +1,4 @@
-<p>
-  heroes-list works!
-</p>
+<md-list>
+  <h2 md-header>{{ title }}</h2>
+  <gog-hero-list-item *ngFor="let hero of heroes" [hero]="hero"></gog-hero-list-item>
+</md-list>
