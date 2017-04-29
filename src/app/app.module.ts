@@ -15,7 +15,6 @@ import { HeroesDetailsComponent } from './heroes/heroes-details/heroes-details.c
 import { VillainsComponent } from './villains/villains.component';
 import { VillainsListComponent } from './villains/villains-list/villains-list.component';
 import { VillainsDetailsComponent } from './villains/villains-details/villains-details.component';
-import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
 import { HeroListItemComponent } from './heroes/heroes-list/hero-list-item/hero-list-item.component';
 import { VillainListItemComponent } from './villains/villains-list/villain-list-item/villain-list-item.component';
@@ -29,7 +28,6 @@ import { VillainListItemComponent } from './villains/villains-list/villain-list-
     VillainsComponent,
     VillainsListComponent,
     VillainsDetailsComponent,
-    LandingComponent,
     NavComponent,
     HeroListItemComponent,
     VillainListItemComponent

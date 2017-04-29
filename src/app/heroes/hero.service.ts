@@ -7,17 +7,23 @@ export class HeroService {
   heroSelected = new EventEmitter<Hero>();
 
   heroes = [
-    { name: 'Heroe 1', description: 'Lorem ipsum blablabla' },
-    { name: 'Heroe 2', description: 'Lorem ipsum blebleble' },
-    { name: 'Heroe 3', description: 'Lorem ipsum bliblibli' },
-    { name: 'Heroe 4', description: 'Lorem ipsum blobloblo' },
-    { name: 'Heroe 5', description: 'Lorem ipsum blublublu' },
+    { id: 1, name: 'Hero 1', description: 'Lorem ipsum blablabla'},
+    { id: 2, name: 'Hero 2', description: 'Lorem ipsum blebleble'},
+    { id: 3, name: 'Hero 3', description: 'Lorem ipsum bliblibli'},
+    { id: 4, name: 'Hero 4', description: 'Lorem ipsum blobloblo'},
+    { id: 5, name: 'Hero 5', description: 'Lorem ipsum blublublu'},
   ];
 
   constructor() { }
 
-  getHeroes(): Promise<Array<Hero>> {
-    return Promise.resolve(this.heroes);
+  getHeroes() {
+    // return Promise.resolve(this.heroes);
+    return this.heroes;
+  }
+
+  getHero(id: number | string) {
+    // return Promise.resolve(this.heroes).then(heroes => heroes.find(hero => hero.id === +id));
+    return this.heroes[id];
   }
 
 }
