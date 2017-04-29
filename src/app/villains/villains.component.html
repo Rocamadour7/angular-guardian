@@ -2,8 +2,5 @@
   <md-sidenav mode="side" opened>
     <gog-villains-list></gog-villains-list>
   </md-sidenav>
-    <gog-villains-details *ngIf="selectedVillain; else infoText" [villain]="selectedVillain"></gog-villains-details>
-    <ng-template #infoText>
-      <p>Please select a villain</p>
-    </ng-template>
+  <router-outlet></router-outlet>
 </md-sidenav-container>

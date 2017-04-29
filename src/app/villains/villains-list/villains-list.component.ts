@@ -11,14 +11,11 @@ import { Villain } from './../villain.model';
 export class VillainsListComponent implements OnInit {
   title: string = 'Villains';
   villains: Array<Villain>;
-  @Input() selectedVillain: Villain;
  
   constructor(private villainService: VillainService) { }
 
   ngOnInit() {
-    this.villainService.getVillains().then((villains) => {
-      this.villains = villains;
-    });
+    this.villains = this.villainService.getVillains();
   }
 
 }

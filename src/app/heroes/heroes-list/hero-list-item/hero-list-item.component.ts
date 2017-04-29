@@ -16,8 +16,4 @@ export class HeroListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelected() {
-    this.heroService.heroSelected.emit(this.hero);
-  }
-
 }

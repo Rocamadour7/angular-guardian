@@ -10,7 +10,7 @@ import { Hero } from './../hero.model';
   styleUrls: ['./heroes-details.component.css']
 })
 export class HeroesDetailsComponent implements OnInit {
-  @Input() hero: Hero;
+  hero: Hero;
 
   constructor(private heroService: HeroService, private route: ActivatedRoute, private router: Router) { }
 

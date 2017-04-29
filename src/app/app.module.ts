@@ -8,29 +8,15 @@ import "hammerjs";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroesModule } from './heroes/heroes.module';
+import { VillainsModule } from './villains/villains.module';
 
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
-import { HeroesDetailsComponent } from './heroes/heroes-details/heroes-details.component';
-import { VillainsComponent } from './villains/villains.component';
-import { VillainsListComponent } from './villains/villains-list/villains-list.component';
-import { VillainsDetailsComponent } from './villains/villains-details/villains-details.component';
 import { NavComponent } from './nav/nav.component';
-import { HeroListItemComponent } from './heroes/heroes-list/hero-list-item/hero-list-item.component';
-import { VillainListItemComponent } from './villains/villains-list/villain-list-item/villain-list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroesListComponent,
-    HeroesDetailsComponent,
-    VillainsComponent,
-    VillainsListComponent,
-    VillainsDetailsComponent,
-    NavComponent,
-    HeroListItemComponent,
-    VillainListItemComponent
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +24,8 @@ import { VillainListItemComponent } from './villains/villains-list/villain-list-
     HttpModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HeroesModule,
+    VillainsModule,
     AppRoutingModule
   ],
   providers: [],

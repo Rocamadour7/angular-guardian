@@ -7,17 +7,22 @@ export class VillainService {
   villainSelected = new EventEmitter<Villain>();
 
   villains = [
-    { name: 'Villain 1', description: 'Lorem ipsum blablabla' },
-    { name: 'Villain 2', description: 'Lorem ipsum blebleble' },
-    { name: 'Villain 3', description: 'Lorem ipsum bliblibli' },
-    { name: 'Villain 4', description: 'Lorem ipsum blobloblo' },
-    { name: 'Villain 5', description: 'Lorem ipsum blublublu' },
+    { id: 1, name: 'Villain 1', description: 'Lorem ipsum blablabla' },
+    { id: 2, name: 'Villain 2', description: 'Lorem ipsum blebleble' },
+    { id: 3, name: 'Villain 3', description: 'Lorem ipsum bliblibli' },
+    { id: 4, name: 'Villain 4', description: 'Lorem ipsum blobloblo' },
+    { id: 5, name: 'Villain 5', description: 'Lorem ipsum blublublu' },
   ];
 
   constructor() { }
 
-  getVillains(): Promise<Array<Villain>> {
-    return Promise.resolve(this.villains);
+  getVillains() {
+    // return Promise.resolve(this.villains);
+    return this.villains;
+  }
+
+  getVillain(id: number) {
+    return this.villains[id - 1];
   }
 
 }

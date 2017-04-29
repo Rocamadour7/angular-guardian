@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 
 import { VillainService } from './../villain.service';
 import { Villain } from './../villain.model';
@@ -9,11 +10,14 @@ import { Villain } from './../villain.model';
   styleUrls: ['./villains-details.component.css']
 })
 export class VillainsDetailsComponent implements OnInit {
-  @Input() villain: Villain;
+  villain: Villain;
 
-  constructor(private villainService: VillainService) { }
+  constructor(private villainService: VillainService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    this.route.params.subscribe((params: Params) => {
+      this.villain = this.villainService.getVillain(+params['id']);
+    });
   }
 
 }

@@ -1,4 +1,4 @@
-<md-list-item [class.selected]="villain===selectedVillain" (click)="onSelected()">
+<md-list-item [routerLink]="[villain.id]">
   <p md-line>
     <span>{{ villain.name }}</span>
   </p>

@@ -11,7 +11,6 @@ import { Hero } from './../hero.model';
 export class HeroesListComponent implements OnInit {
   title: string = 'Heroes';
   heroes: Array<Hero>;
-  @Input() selectedHero: Hero;
 
   constructor(private heroService: HeroService) { }
 

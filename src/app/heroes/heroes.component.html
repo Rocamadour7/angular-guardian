@@ -2,8 +2,5 @@
   <md-sidenav mode="side" opened>
     <gog-heroes-list></gog-heroes-list>
   </md-sidenav>
-    <gog-heroes-details *ngIf="selectedHero; else infoText" [hero]="selectedHero"></gog-heroes-details>
-    <ng-template #infoText>
-      <p>Please select a hero</p>
-    </ng-template>
+  <router-outlet></router-outlet>
 </md-sidenav-container>

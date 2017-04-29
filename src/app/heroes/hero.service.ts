@@ -21,9 +21,9 @@ export class HeroService {
     return this.heroes;
   }
 
-  getHero(id: number | string) {
+  getHero(id: number) {
     // return Promise.resolve(this.heroes).then(heroes => heroes.find(hero => hero.id === +id));
-    return this.heroes[id];
+    return this.heroes[id - 1];
   }
 
 }

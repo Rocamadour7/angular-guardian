@@ -16,8 +16,4 @@ export class VillainListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelected() {
-    this.villainService.villainSelected.emit(this.villain);
-  }
-
 }
