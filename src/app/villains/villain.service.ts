@@ -7,11 +7,11 @@ export class VillainService {
   villainSelected = new EventEmitter<Villain>();
 
   villains = [
-    { id: 1, name: 'Villain 1', description: 'Lorem ipsum blablabla' },
-    { id: 2, name: 'Villain 2', description: 'Lorem ipsum blebleble' },
-    { id: 3, name: 'Villain 3', description: 'Lorem ipsum bliblibli' },
-    { id: 4, name: 'Villain 4', description: 'Lorem ipsum blobloblo' },
-    { id: 5, name: 'Villain 5', description: 'Lorem ipsum blublublu' },
+    { id: 1, name: 'Thanos', description: 'Lorem ipsum blablabla', imgPath: '/assets/villains/Thanos.png' },
+    { id: 2, name: 'Sovereigns', description: 'Lorem ipsum blebleble', imgPath: '/assets/villains/Sovereign.png' },
+    { id: 3, name: 'Sakaarans', description: 'Lorem ipsum bliblibli', imgPath: '/assets/villains/Sakaaran.png' },
+    { id: 4, name: 'Ronan the Accuser', description: 'Lorem ipsum blobloblo', imgPath: '/assets/villains/Ronan.png' },
+    { id: 5, name: 'Korath the Pursuer', description: 'Lorem ipsum blublublu', imgPath: '/assets/villains/Korath.png' },
   ];
 
   constructor() { }

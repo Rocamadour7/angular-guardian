@@ -7,11 +7,12 @@ export class HeroService {
   heroSelected = new EventEmitter<Hero>();
 
   heroes = [
-    { id: 1, name: 'Hero 1', description: 'Lorem ipsum blablabla'},
-    { id: 2, name: 'Hero 2', description: 'Lorem ipsum blebleble'},
-    { id: 3, name: 'Hero 3', description: 'Lorem ipsum bliblibli'},
-    { id: 4, name: 'Hero 4', description: 'Lorem ipsum blobloblo'},
-    { id: 5, name: 'Hero 5', description: 'Lorem ipsum blublublu'},
+    { id: 1, name: 'Peter Quill', description: 'Lorem ipsum blablabla', imgPath: '/assets/heroes/StarLord.png'},
+    { id: 2, name: 'Gamora', description: 'Lorem ipsum blebleble', imgPath: '/assets/heroes/Gamora.png'},
+    { id: 3, name: 'Drax the Destroyer', description: 'Lorem ipsum bliblibli', imgPath: '/assets/heroes/Drax.png'},
+    { id: 4, name: 'Rocket Raccoon', description: 'Lorem ipsum blobloblo', imgPath: '/assets/heroes/Rocket.png'},
+    { id: 5, name: 'Groot', description: 'Lorem ipsum blublublu', imgPath: '/assets/heroes/Groot.png'},
+    { id: 6, name: 'Mantis', description: 'Lorem ipsum blublublu', imgPath: '/assets/heroes/Mantis.png'},
   ];
 
   constructor() { }
