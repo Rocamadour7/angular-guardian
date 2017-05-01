@@ -1,1 +1,11 @@
-<span>{{ villain.description }}</span>
+<md-card>
+    <md-card-header>
+        <img md-card-avatar [src]="villain.imgPathAvatar" [alt]="villain.name">
+        <md-card-title>{{ villain.name }}</md-card-title>
+        <md-card-subtitle>{{ villain.specie }}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image [src]="villain.imgPath" [alt]="villain.name">
+    <md-card-content>
+        <p>{{ villain.description }}</p>
+    </md-card-content>
+</md-card>

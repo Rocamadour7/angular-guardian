@@ -1,5 +1,5 @@
 <md-list-item [routerLink]="[hero.id]">
-  <img md-list-avatar src="{{ hero.imgPath }}" alt="{{ hero.name }}">
+  <img md-list-avatar [src]="hero.imgPathAvatar" [alt]="hero.name">
   <p md-line>
     <span>{{ hero.name }}</span>
   </p>

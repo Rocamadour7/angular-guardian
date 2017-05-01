@@ -1,1 +1,11 @@
-<span>{{ hero.description }}</span>
+<md-card>
+    <md-card-header>
+        <img md-card-avatar [src]="hero.imgPathAvatar" [alt]="hero.name">
+        <md-card-title>{{ hero.name }}</md-card-title>
+        <md-card-subtitle>{{ hero.specie }}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image [src]="hero.imgPath" [alt]="hero.name">
+    <md-card-content>
+        <p>{{ hero.description }}</p>
+    </md-card-content>
+</md-card>
