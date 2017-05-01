@@ -12,3 +12,7 @@
 .name {
     padding: 0;
 }
+
+.space-fill {
+    flex: 1 1 auto;
+}

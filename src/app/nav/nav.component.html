@@ -1,10 +1,18 @@
-<md-toolbar color="primary">
-  <div class="md-toolbar-tools" fxLayout="row nowrap" fxFlex fxLayoutAlign="end center">
+<md-toolbar color="primary" class="toolbar">
+  <div class="md-toolbar-tools">
     <a class="ng-title-icon" href="http://angular.io" target="_blank"><i></i></a>
     <span class="title">Angular Guardian</span>
-    <a fxFlex md-button [routerLink]="['/heroes']" routerLinkActive="active"><span>Heroes</span></a>
-    <a fxFlex md-button [routerLink]="['/villains']" routerLinkActive="active"><span>Villains</span></a>
-    <span fxFlex="grow"></span>
-    <a fxFlex md-button href="https://github.com/Rocamadour7" target="_blank" class="name"><span>Luis Molina</span></a>
+    <a md-button [routerLink]="['/heroes']" routerLinkActive="active"><span>Heroes</span></a>
+    <a md-button [routerLink]="['/villains']" routerLinkActive="active"><span>Villains</span></a>
+    <span></span>
+    <a md-button href="https://github.com/Rocamadour7" target="_blank" class="name"><span>Luis Molina</span></a>
   </div>
+  <span class="space-fill"></span>
+  <button md-icon-button="" [md-menu-trigger-for]="menu">
+    <md-icon>more_vert</md-icon>
+  </button>
 </md-toolbar>
+
+<md-menu x-position="before" #menu="mdMenu">
+  <button md-menu-item (click)="onTheming()">Toggle theme</button>
+</md-menu>

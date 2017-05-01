@@ -1,22 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-import { VillainService } from './villain.service';
-import { Villain } from './villain.model';
-
 @Component({
   selector: 'gog-villains',
   templateUrl: './villains.component.html',
   styleUrls: ['./villains.component.css']
 })
 export class VillainsComponent implements OnInit {
-  selectedVillain: Villain;
 
-  constructor(private villainService: VillainService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.villainService.villainSelected.subscribe((villain: Villain) => {
-      this.selectedVillain = villain;
-    });
   }
 
 }

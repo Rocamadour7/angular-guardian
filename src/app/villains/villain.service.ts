@@ -4,7 +4,6 @@ import { Villain } from './villain.model';
 
 @Injectable()
 export class VillainService {
-  villainSelected = new EventEmitter<Villain>();
 
   villains = [
     {

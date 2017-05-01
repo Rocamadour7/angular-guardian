@@ -11,7 +11,7 @@ const appRoutes: Routes = [
     // { path: 'heroes', component: HeroesComponent, children: [
     //     { path: ':id', component: HeroesDetailsComponent }
     // ]},
-    { path: 'villains', component: VillainsComponent},
+    // { path: 'villains', component: VillainsComponent},
     
 ];
 
