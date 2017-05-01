@@ -6,7 +6,7 @@ import { VillainsDetailsComponent } from './villains-details/villains-details.co
 
 const villainsRoutes: Routes = [
     { path: 'villains', component: VillainsComponent, children: [
-        { path: ':id', component: VillainsDetailsComponent }
+        { path: ':slug', component: VillainsDetailsComponent }
     ] }
 ];
 

@@ -6,7 +6,7 @@ import { HeroesDetailsComponent } from './heroes-details/heroes-details.componen
 
 const heroesRoutes: Routes = [
     { path: 'heroes', component: HeroesComponent, children: [
-        { path: ':id', component: HeroesDetailsComponent }
+        { path: ':slug', component: HeroesDetailsComponent }
     ] }
 ];
 

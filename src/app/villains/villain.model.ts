@@ -4,5 +4,6 @@ export class Villain {
                 public specie: string,
                 public description: string,
                 public imgPathAvatar: string,
-                public imgPath: string) { }
+                public imgPath: string,
+                public slug: string) { }
 }

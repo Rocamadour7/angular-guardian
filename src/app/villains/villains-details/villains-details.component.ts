@@ -16,7 +16,7 @@ export class VillainsDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
-      this.villain = this.villainService.getVillain(+params['id']);
+      this.villain = this.villainService.getVillain(params['slug']);
     });
   }
 
